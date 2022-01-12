@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Skydinse.de - Home</title>
+  <link rel="icon" href="./source/style/icon/favicon.ico">
+  <link rel="stylesheet" href="./source/style/css/default-style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f7c72b">
+  <meta content="Skydinse.de" property="og:title">
+  <meta name="twitter:title" content="Skydinse.de">
+  <meta name="twitter:description" content="Dies ist die offizielle Webseite des Minecraft-Servers Skydinse.de">
+  <meta content="Dies ist die offizielle Webseite des Minecraft-Servers Skydinse.de" property="og:description">
+  <meta name="og:site_name" content="Skydinse.de">
+  <meta name="keywords" content="Skydinse, skydinse.de, minecraft, minigames, craftattack, minecraft server, java, bedrock">
+  <meta name="description" content="Dies ist die offizielle Webseite des Minecraft-Servers Skydinse.de">
+</head>
+
+<body>
+
+<div style="float: left;">
+    <img src="./source/style/image/banner/skydinse-banner.png" onclick="home()" alt="Skydinse Logo"> 
+</div>
+<script>
+  function home() {
+    location.replace("./home.html")
+  }
+</script>
+
+<!-- Info Box start -->
+<div class="info-banner" style="width: auto;">
+  <p style="color: white; font-size: 15px; font-family: monospace;">Falls du kein Teammiglied bist, geh SOFOT wieder!<em> <button class="button" onclick="leave();"><div style="font-size: 15px;">SEITE VERLASSEN</div></button></em></p>
+  <button class="info-banner-close">&times;</button>
+</div>
+<script src='./source/script/js/main/info-banner.js'></script><script>$(".info-banner").delay(500).fadeIn();$('.info-banner-close').click(function(e) {$('.info-banner').fadeOut(); }); function leave() {location.replace("http://skydinse.github.io")}</script>
+<!-- Info Box end -->
+
+<div class="main-wrapper">
+  <div class="content-wrapper">
+    <h1>Skydinse.de<br />Team-Bereich</h1>
+    <hr>
+    <p>Dies ist der Team-Bereich des Skydinse.de Teams! Falls du kein Teammitglied bist, verlasse diese Seite sofort wieder!</p>
+    <button class="button" onclick="login();"><div style="font-size: 15px;">-> zum login</div></button>
+    <script>
+      function login() {
+        location.replace("https://skydinse.github.io/team/")
+      }
+    </script>
+    <hr>
+  </body>
+  <footer>
+      <div class="footer-text">Alle Rechtlichen Informationen sind unter <a href="https://skydinse.github.io/docs/about/legal.html" class="footer-text-link">https://skydinse.de/legal.html</a> zu finden.<br />Um diese Webseite kümmert sich <a href="https://linktr.ee/prombelkind" class="footer-text-link" target="content">Lane (Prombelkind)</a></div>
+    </div>
+  </div>
+  </footer>
+  </html>
